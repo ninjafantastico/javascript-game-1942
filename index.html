@@ -149,7 +149,7 @@
 		//console.log(bullets)
 	}
 
-	function detectCollision() {
+	function detectAndProcessCollision() {
 		//console.log("inside collision check")
 		//console.log("number of bullets:" + bullets.length + " Number of enemies:" + enemies.length)
 		for (var i = 0; i < bullets.length; i++) {
@@ -197,7 +197,7 @@
 		displayEnemies()
 		moveBullets()
 		displayBullets()
-		detectCollision()
+		detectAndProcessCollision()
 		displayScore()
 	}
 
